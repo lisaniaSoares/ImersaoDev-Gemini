@@ -29,9 +29,10 @@ h1 {
 }
 
 h1 img{
-    width: 200px;
-    height: 125px;
-    margin-right: 10px;
+    width: 7%;
+    height: 7%;
+    margin-right: 5px;
+    margin-bottom: 0px;
 }
 
 /* Estiliza as seções da página */
@@ -93,7 +94,7 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #3A5A40; /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -109,7 +110,7 @@ section button:hover {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
+    color: #182920; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
