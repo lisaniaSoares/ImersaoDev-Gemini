@@ -1,2 +1,3 @@
-console.log("Hello, World!");
-console.log("Olá, Mundo!");
+//Código para o lógica de Java
+
+console.log(cientistas[0].nome);
