@@ -8,28 +8,56 @@ function pesquisar(){
     //Referenciando uma section do HTML pelo seu id 
     let section = document.getElementById("resultados-pesquisa");  
 
+    //Referenciando o campo de pesquisa
+    let campoPesquisa = document.getElementById("campo-pesquisa").value;
+
+    //Verifica se o campo está vazio
+    if(!campoPesquisa){
+        section.innerHTML = '<p> Busca vazia, pesquise alguma informação! </p>';
+        return
+    }
+
+    campoPesquisa = campoPesquisa.toLowerCase();
+
     //Iniciando uma variável que guardará todo o conteúdo que será enviado para o HTML
     let resultados = "";
+    let nome = "";
+    let descricao = "";
+    let area = "";
 
     //Visando conseguir atribuir à tela todas as informções da lista de dados, faremos um for
     for(let dado of cientistas){
-    
-        //Somamos, para que as informações, ao invés de se sobreporem, elas se adicionem
-        resultados += `
-        <div class="item-resultado"> 
-            <h2>
-                <a href="#">${dado.nome}</a>
-            </h2>
-            <h5 class="descricao-meta">
-                <a href="#">${dado.nascimento} - ${dado.morte} </a>
-            </h5>
-            <p class="descricao-meta">${dado.descricao} </p>
-            <p class="descricao-meta">
-                <a href="#">Área de atuação: ${dado.area}</a> 
-            </p>
-            <a href=${dado.wiki} target="_blank">Mais informações sobre ela.</a>
-        </div>
-        `;
+        nome = dado.nome.toLowerCase();
+        descricao = dado.descricao.toLowerCase();
+        area = dado.area.toLowerCase();
+        
+        //Verifica se algum item na base de dados corresponde com o que foi pesquisado
+        if(nome.includes(campoPesquisa) || descricao.includes(campoPesquisa) || area.includes(campoPesquisa)){
+
+            console.log(campoPesquisa);
+
+            //Somamos, para que as informações, ao invés de se sobreporem, elas se adicionem
+            resultados += `
+            <div class="item-resultado"> 
+                <h2>
+                    <a href="#">${dado.nome}</a>
+                </h2>
+                <h5 class="descricao-meta">
+                    <a href="#">${dado.nascimento} - ${dado.morte} </a>
+                </h5>
+                <p class="descricao-meta">${dado.descricao} </p>
+                <p class="descricao-meta">
+                    <a href="#">Área de atuação: ${dado.area}</a> 
+                </p>
+                <a href=${dado.wiki} target="_blank">Mais informações sobre ela.</a>
+            </div>
+            `;
+        }
+
+    }
+
+    if(!resultados){
+        resultados = "<p> Não temos essa informação em nossa base de dados, desculpe.</p>";
     }
 
     //O innerHTML serve para definir o conteúdo HTML interno do elemento, que será toda a nosaa variável resultado

@@ -4,54 +4,110 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #BECBA8; /* Cor de fundo da página */
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
+    background-color: #f4f0eb; /* Cor de fundo da página */
+    min-height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0;
+    padding: 0;
 }
 
 header{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    background-color: #dbe6c7;
+    padding: 10px;
+    margin: 0;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens verticalmente */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 5%; /* Altura ajustada */
+}
+
+nav li {
+    padding: 10px; /* Adiciona um pouco de espaço em volta de cada item */
+}
+
+nav img {
+    height: 30px; /* Define a altura da imagem */
+    vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
+}
+
+nav a {
+    font-size: larger;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #202e11; /* Cor do texto dos links */
 }
 
 /* Estiliza os títulos h1 */
-h1 {
+h3 {
     font-size: 2.5rem; /* Tamanho da fonte */
-    color: #131b0a; /* Cor do texto */
+    color: #202e11; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
     display: inline-block;
     vertical-align: middle;
 }
 
-h1 img{
-    width: 7%;
-    height: 7%;
+h3 img{
+    width: 9%;
+    height: 9%;
     margin-right: 5px;
     margin-bottom: 0px;
 }
 
+main{
+    flex: 1;
+}
+
 /* Estiliza as seções da página */
-section {
+.section-pesquisa{
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
+    justify-content: center;
     align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    
+}
+
+.container-banner{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.banner-1{
+    height: 750px;
+    width: auto;
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
 }
 
+.banner-2{
+    height: 700px;
+    width: auto;
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+
 /* Estiliza os inputs dentro das seções */
 section input {
-    width: 30rem; /* Largura dos inputs */
+    width: 40rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
-    padding: 1rem; /* Espaçamento interno */
+    padding: 1.3rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    margin-right: 1rem;
     color: #45474B; /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #d3e2b6;
+    font-size: 1.3rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
@@ -62,7 +118,7 @@ section button {
     border-radius: 1.5rem; /* Borda arredondada */
     background-color: #3A5A40; /* Cor de fundo do botão */
     color: #FEFAE0; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 1.3rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
@@ -70,6 +126,12 @@ section button {
 section button:hover {
     background-color: #344E41; /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+.section-resultado{
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -116,12 +178,12 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #FEFAE0; /* Cor de fundo do rodapé */
+    background-color: #eefad7; /* Cor de fundo do rodapé */
     color: #45474B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
+    padding: 10px; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position: relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }

@@ -12,21 +12,42 @@
 
     <header> <!--Cabeçalho da página-->
 
-        <h1>
-            <img src="icon.png" alt="Icone científico">
-            Mulheres Cientistas
-        </h1>
+    
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <h3>
+                            <img src="img/icon.png" alt="Icone científico">
+                            Mulheres Cientistas
+                        </h3>
+                    </li>
+                    <li><a href="#">Home</a></li>  
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
     <main> <!--Parte principal da péagina - seu corpo em si-->
 
-        <section> <!--Seções da página principa: seção de pesquisa-->
-            <input type="text" placeholder="Digite o nome da cientista">
-            <button onclick="pesquisar()">Pesquisar</button>
+        <section class="section-banner">
+            <div class="container-banner">
+                <img class="banner-1" src="img/banner-pt1.png" alt="Banner Mulheres Cientistas">
+                <img class="banner-2" src="img/banner-pt2.png" alt="Banner Mulheres Cientistas">
+            </div>
         </section>
 
-        <section class="resultados-pesquisa" id="resultados-pesquisa"> <!--Seção de resultados das pesquisas, como teremos vários resultados, haverão diversas divs para dividi-los (sua classe usamos no css, e o id referenciamos no)-->
+        <!--Seções da página principa: seção de pesquisa-->
+        <section class="section-pesquisa"> 
+            <div>
+                <input type="text" placeholder="Busque uma cientista ou uma área de atuação" id="campo-pesquisa">
+                <button onclick="pesquisar()">Pesquisar</button>
+            </div>
+        </section>
+
+        <section class="section-resultado resultados-pesquisa" id="resultados-pesquisa"> <!--Seção de resultados das pesquisas, como teremos vários resultados, haverão diversas divs para dividi-los (sua classe usamos no css, e o id referenciamos no)-->
 
             <!--Separação de um resultado da seção, trazido pelo JS-->
 
@@ -35,10 +56,11 @@
     </main>
 
     <footer> <!--Rodapé da página web-->
-
-        <p>2024 - Mulheres Cientistas. Todos os direitos reservados.</p>
-        <p>Entre em contato pelo email: mulheres@cientistas.com.br</p>
-
+        <section>
+            <p>2024 - Mulheres Cientistas. Todos os direitos reservados. Autora: Lisânia Soares Miranda</p>
+            <p>Linkedin: Lisânia Soares Miranda</p>
+            <p>Entre em contato pelo email: mulheres@cientistas.com.br</p>
+        </section>
     </footer>
 
     <!--Estabelecendo o link com o arquivo javascript-->
