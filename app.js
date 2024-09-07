@@ -58,9 +58,9 @@ function pesquisar(){
                     <h2>
                         <a href="#">${dado.nome}</a>
                     </h2>
-                    <h4 class="descricao-meta">
+                    <h5 class="descricao-meta">
                         <a href="#">${dado.nascimento} - ${dado.morte} </a>
-                    </h4>
+                    </h5>
                     <p class="descricao-meta">${dado.descricao} </p>
                     <p class="descricao-meta">
                         <a href="#">Área de atuação: ${dado.area}</a> 

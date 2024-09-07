@@ -17,9 +17,9 @@ header{
     justify-content:space-between;
     flex-direction: row;
     background-color: #dbe6c7;
-    padding: 10px;
+    padding: 0.6rem;
     margin: 0;
-    height: 100px;
+    height: 4.5rem;
 }
 
 nav ul {
@@ -30,14 +30,15 @@ nav ul {
     margin: 0;
     padding: 0;
     height: 5%; /* Altura ajustada */
+    width: 100%;
 }
 
 nav li {
-    padding: 10px; /* Adiciona um pouco de espaço em volta de cada item */
+    padding: 1rem; /* Adiciona um pouco de espaço em volta de cada item */
 }
 
 nav img {
-    height: 30px; /* Define a altura da imagem */
+    height: 3rem; /* Define a altura da imagem */
     vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
 }
 
@@ -49,7 +50,7 @@ nav a {
 
 /* Estiliza os títulos h1 */
 h3 {
-    font-size: 2.5rem; /* Tamanho da fonte */
+    font-size: 2rem; /* Tamanho da fonte */
     color: #202e11; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
@@ -60,8 +61,8 @@ h3 {
 h3 img{
     width: 9%;
     height: 9%;
-    margin-right: 5px;
-    margin-bottom: 0px;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
 }
 
 main{
@@ -80,20 +81,21 @@ main{
 
 .container-banner{
     width: 100%;
+    padding: 0;
     display: flex;
     justify-content: right;
 }
 
 .banner-1{
-    height: 750px;
+    height: 31rem;
     width: auto;
-    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    margin-bottom: 0; /* Espaçamento abaixo de cada seção */
 }
 
 .banner-2{
-    height: 700px;
+    height: 28rem;
     width: auto;
-    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    margin-bottom: 0; /* Espaçamento abaixo de cada seção */
 }
 
 
@@ -101,13 +103,13 @@ main{
 section input {
     width: 40rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
-    padding: 1.3rem; /* Espaçamento interno */
+    padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
     margin-right: 1rem;
     color: #45474B; /* Cor do texto */
     background-color: #d3e2b6;
-    font-size: 1.3rem; /* Tamanho da fonte */
+    font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
@@ -118,7 +120,7 @@ section button {
     border-radius: 1.5rem; /* Borda arredondada */
     background-color: #3A5A40; /* Cor de fundo do botão */
     color: #FEFAE0; /* Cor do texto do botão */
-    font-size: 1.3rem; /* Tamanho da fonte */
+    font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
@@ -139,7 +141,7 @@ section button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75rem; /* Largura máxima da caixa de resultados */
+    width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
@@ -153,14 +155,14 @@ section button:hover {
     flex-direction: row;
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
+    padding: 0.5rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
+    font-size: 1.3rem; /* Tamanho da fonte */
     color: #3A5A40; /* Cor do texto */
 }
 
@@ -176,7 +178,7 @@ section button:hover {
 }
 
 .item-resultado p{
-    font-size: large;
+    font-size: medium;
 }
 
 .img-resultado{
@@ -194,12 +196,12 @@ section button:hover {
 
 .item-erro {
     background: #FFFFFF; /* Cor de fundo dos itens */
-    width: 30rem;
+    width: 20rem;
     border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    padding: 0.8rem; /* Espaçamento interno */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    font-size: large;
+    font-size: medium;
 }
 .img-aviso{
     height: 370px;
@@ -210,11 +212,11 @@ footer {
     background-color: #eefad7; /* Cor de fundo do rodapé */
     color: #45474B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 10px; /* Espaçamento interno */
+    padding: 0.4rem; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
     position: relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 0.8rem; /* Tamanho da fonte */
 }
 
 
@@ -269,3 +271,5 @@ footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }
+
+
