@@ -65,7 +65,7 @@ function pesquisar(){
                     <p class="descricao-meta">
                         <a href="#">Área de atuação: ${dado.area}</a> 
                     </p>
-                    <a href=${dado.wiki} target="_blank">Mais informações sobre ela.</a>
+                    <a class="link" href=${dado.wiki} target="_blank">Mais informações sobre ela.</a>
                 </div>
             </div>
             `;

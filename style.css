@@ -13,11 +13,21 @@ body {
 }
 
 header{
-    text-align: center;
     display: flex;
     align-items: center;
-    justify-content:space-between;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1900px;
+}
+
+.navbar{
+    width: 100%;
+    max-width: 1900px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
     background-color: #dbe6c7;
     padding: 0.6rem;
     margin: 0;
@@ -26,17 +36,17 @@ header{
 
 nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: left;
+     /* Centraliza os itens verticalmente */
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 5%; /* Altura ajustada */
-    width: 100%;
 }
 
 nav li {
     padding: 1rem; /* Adiciona um pouco de espaço em volta de cada item */
+    display: flex;
+    align-items: center;
 }
 
 nav img {
@@ -51,16 +61,15 @@ nav a {
 }
 
 /* Estiliza os títulos h1 */
-h3 {
-    font-size: 2rem; /* Tamanho da fonte */
+h2 {
     color: #202e11; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
     display: inline-block;
     vertical-align: middle;
 }
 
-h3 img{
+h2 img{
     width: 9%;
     height: 9%;
     margin-right: 0.5rem;
@@ -79,20 +88,21 @@ h3 img{
 
 .container-banner{
     width: 100%;
+    max-width: 1900px;
     padding: 0;
     display: flex;
     justify-content: right;
 }
 
 .banner-1{
-    height: 31rem;
-    width: auto;
+    height: auto;
+    max-width: 40%;
     margin-bottom: 0; /* Espaçamento abaixo de cada seção */
 }
 
 .banner-2{
-    height: 28rem;
-    width: auto;
+    height: auto;
+    max-width: 40%;
     margin-bottom: 0; /* Espaçamento abaixo de cada seção */
 }
 
@@ -184,6 +194,8 @@ section button:hover {
     width: 25vh;
     margin-right: 1.2rem;
     border-radius: 0.6rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
@@ -201,8 +213,9 @@ section button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     font-size: medium;
 }
+
 .img-aviso{
-    height: 370px;
+    height: 27rem;
 }
 
 /* Estiliza o rodapé da página */
@@ -219,14 +232,44 @@ footer {
 
 
 @media (max-width: 768px) {
+    .navbar{
+        height: 3rem;
+    }
+
+    nav h2{
+        font-size: 0.6rem;
+    }
+
+    nav a{
+        font-size: 0.6rem;
+    }
+
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
         letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
     }
 
+    h2{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    h3{
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
     section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
+        width: auto;/* Largura dos inputs em telas menores */
         padding: 0.8rem; /* Espaçamento interno em telas menores */
+        padding: 0.5rem; /* Espaçamento interno */
+        margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+        margin-right: 0.5rem;
+        font-size: 0.6rem; /* Tamanho da fonte */
+    }
+
+    .input{
+        width: 85%;
     }
 
     .resultados-pesquisa {
@@ -235,16 +278,47 @@ footer {
     }
 
     .item-resultado h2 {
-        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+        font-size: 1.2rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+
+    .item-resultado p{
+        font-size: 0.5rem;
+    }
+
+    .descricao-meta{
+        font-size: 0.7rem;
+    }
+
+    .item-erro{
+        font-size: 0.6rem;
+    }
+
+    .img-aviso{
+        height: 13rem;
     }
 }
 
 /* Responsividade para celulares */
 @media (max-width: 480px) {
 
+    .navbar{
+        height: 2.8rem;
+    }
+
     h1 {
         font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
         letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    h2{
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+
+    h3{
+        font-size: 0.8rem;
+        letter-spacing: 0.08rem;
     }
 
     section input {
@@ -252,8 +326,8 @@ footer {
     }
 
     section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+        padding: 0.4rem 0.7rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.5rem; /* Tamanho da fonte do botão em telas pequenas */
     }
 
     .resultados-pesquisa {
@@ -262,11 +336,35 @@ footer {
     }
 
     .item-resultado h2 {
-        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    .item-resultado p {
+        font-size: 0.4rem;
+    }
+
+    .link{
+        font-size: 0.4rem;
+        margin-top: 1rem;
+    }
+
+    .descricao-meta{
+        font-size: 0.5rem;
+    }
+
+    .img-resultado{
+        margin-top: 1rem;
+    }
+
+    .item-erro{
+        font-size: 0.6rem;
+        width: 14rem;
+        padding: 0.5rem;
+        margin-bottom: 0.1rem;
     }
 
     footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        font-size: 0.4rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }
 
