@@ -280,11 +280,11 @@ footer {
     }
 
     .item-resultado h2 {
-        font-size: 1.2rem; /* Tamanho da fonte dos títulos em telas menores */
+        font-size: 1rem; /* Tamanho da fonte dos títulos em telas menores */
     }
 
     .item-resultado p{
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
 
     .descricao-meta{
@@ -300,8 +300,8 @@ footer {
     }
 
     .img-resultado{
-        width: 5rem;
-        height: 7rem;
+        width: 10vh;
+        height: 15vh;
         margin-top: 1rem;
     }
 }
@@ -344,11 +344,11 @@ footer {
     }
 
     .item-resultado h2 {
-        font-size: 1.2rem; /* Tamanho da fonte dos títulos em telas pequenas */
+        font-size: 1rem; /* Tamanho da fonte dos títulos em telas pequenas */
     }
 
     .item-resultado p {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     .link{
@@ -361,8 +361,8 @@ footer {
     }
 
     .img-resultado{
-        width: 3rem;
-        height: 5rem;
+        width: 10vh;
+        height: 15vh;
         margin-top: 1rem;
     }
 
