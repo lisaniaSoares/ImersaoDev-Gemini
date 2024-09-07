@@ -298,6 +298,12 @@ footer {
     .img-aviso{
         height: 13rem;
     }
+    
+    .img-resultado{
+        width: 3rem;
+        height: 5rem;
+        margin-top: 1rem;
+    }
 }
 
 /* Responsividade para celulares */
@@ -355,8 +361,8 @@ footer {
     }
 
     .img-resultado{
-        width: 5rem;
-        height: 7rem;
+        width: 3rem;
+        height: 5rem;
         margin-top: 1rem;
     }
 
