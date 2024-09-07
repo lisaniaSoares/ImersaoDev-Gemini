@@ -21,17 +21,11 @@ Este projeto web é uma homenagem às mulheres que revolucionaram a ciência. Aq
 
 **Acesse:** https://mulheres-cientistas.vercel.app/
 
-**Contribuições:**
 
-Se você gostaria de contribuir para este projeto, fique à vontade para abrir um pull request.
 
 **Autor:**
 
 Lisânia Soares Miranda
-
-**Licença:**
-
-[Escolha a licença desejada, por exemplo, MIT]
 
 **Agradecimentos:**
 
