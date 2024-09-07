@@ -136,7 +136,10 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
@@ -146,6 +149,8 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
+    display: flex;
+    flex-direction: row;
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
@@ -170,10 +175,34 @@ section button:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+.item-resultado p{
+    font-size: large;
+}
+
+.img-resultado{
+    height: 30vh;
+    width: 25vh;
+    margin-right: 1.2rem;
+    border-radius: 0.6rem;
+}
+
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
     color: #182920; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+.item-erro {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    width: 30rem;
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    font-size: large;
+}
+.img-aviso{
+    height: 370px;
 }
 
 /* Estiliza o rodapé da página */
@@ -187,6 +216,7 @@ footer {
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
+
 
 @media (max-width: 768px) {
     h1 {
