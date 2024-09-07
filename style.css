@@ -220,6 +220,8 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
+    width: 100%;
+    max-width: 1900px;
     background-color: #eefad7; /* Cor de fundo do rodapé */
     color: #45474B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
@@ -261,11 +263,11 @@ footer {
 
     section input {
         width: auto;/* Largura dos inputs em telas menores */
-        padding: 0.8rem; /* Espaçamento interno em telas menores */
+        padding: 0.7rem; /* Espaçamento interno em telas menores */
         padding: 0.5rem; /* Espaçamento interno */
         margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
         margin-right: 0.5rem;
-        font-size: 0.6rem; /* Tamanho da fonte */
+        font-size: 0.8rem; /* Tamanho da fonte */
     }
 
     .input{
@@ -336,23 +338,25 @@ footer {
     }
 
     .item-resultado h2 {
-        font-size: 0.9rem; /* Tamanho da fonte dos títulos em telas pequenas */
+        font-size: 1.2rem; /* Tamanho da fonte dos títulos em telas pequenas */
     }
 
     .item-resultado p {
-        font-size: 0.4rem;
+        font-size: 0.7rem;
     }
 
     .link{
-        font-size: 0.4rem;
+        font-size: 0.5rem;
         margin-top: 1rem;
     }
 
     .descricao-meta{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .img-resultado{
+        width: 5rem;
+        height: 7rem;
         margin-top: 1rem;
     }
 
