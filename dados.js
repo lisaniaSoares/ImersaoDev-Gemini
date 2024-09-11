@@ -35,12 +35,12 @@ let cientistas = [
     {
         nome: "Rosalind Franklin",
         descricao: "Cristalografa britânica, Rosalind Franklin produziu a famosa 'Foto 51', uma imagem por difração de raios X que revelou a estrutura helicoidal do DNA. Seu trabalho foi fundamental para a compreensão da molécula da vida, embora seu papel tenha sido subestimado em vida.",
-        area: "Biofísica",
+        area: "Física e Química",
         nascimento: "1920",
         morte: "1958",
         wiki: "https://pt.wikipedia.org/wiki/Rosalind_Franklin",
         img: "img/cientistas/rosalind-franklin.jpg",
-        tags: "fotografia biologia fisica física molecula DNA dna rna cristalografia"
+        tags: "fotografia biologia fisica quimica física química quimica fisica molecula DNA dna rna cristalografia"
     },
     {
         nome: "Ada Lovelace",
